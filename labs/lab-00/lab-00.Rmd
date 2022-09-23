@@ -19,7 +19,7 @@ We set up the data frame.
 usernames <- c("wilsonamy", "joana", "hannahkingham", "bob", "ben") #Extend if necessary
 nums <- c(18, 5, 7, 14, 11) #Extend if necessary
 colours <- c("powderblue", "chocolate", "yellowgreen", "mintcream", "magenta") #Extend if necessary
-hobbies <- c("Hiking", "Hobby 1", "Hobby 2", "Hobby 3", "Hobby 4") #Extend if necessary
+hobbies <- c("Hiking", "Hobby 1", "Running", "Hobby 3", "Hobby 4") #Extend if necessary
 
 team_data <- tibble(username = usernames, die_roll = nums, colour = colours,
                     hobby = hobbies)
@@ -30,9 +30,9 @@ We now work on visualising our data.
 
 ```{r bar-plot}
 # Uncomment the three lines below
-# p1 <- ggplot(team_data, aes(x = username, y = die_roll)) +
-#   geom_col(fill = team_data$colour)
-# p1
+ p1 <- ggplot(team_data, aes(x = username, y = die_roll)) +
+   geom_col(fill = team_data$colour)
+ p1
 ```
 
 ### Exercise 19
@@ -43,9 +43,9 @@ We now work on visualising our data.
 
 ```{r labelled-bar-plot}
 # Uncomment the three lines below
-# p1 +
-#   labs(x = "Insert text here", y = "Insert text here",
-#        title = "Insert text here")
+ p1 +
+   labs(x = "Insert text here", y = "Insert text here",
+        title = "Insert text here")
 ```
 
 *Remove this text (including the stars), and add your answer for Exercise 21 here.*
