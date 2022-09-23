@@ -16,7 +16,7 @@ library(tidyverse)
 We set up the data frame.
 
 ```{r setup-tibble}
-usernames <- c("wilsonamy", "joana", "hannah", "bob", "ben") #Extend if necessary
+usernames <- c("wilsonamy", "joana", "hannahkingham", "bob", "ben") #Extend if necessary
 nums <- c(18, 5, 7, 14, 11) #Extend if necessary
 colours <- c("powderblue", "chocolate", "yellowgreen", "mintcream", "magenta") #Extend if necessary
 hobbies <- c("Hiking", "Hobby 1", "Hobby 2", "Hobby 3", "Hobby 4") #Extend if necessary
